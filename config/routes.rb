@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  resources :comments do
-    resources :chats
+  resources :chats do
+    resources :comments
   end
   
   root "chats#index"
